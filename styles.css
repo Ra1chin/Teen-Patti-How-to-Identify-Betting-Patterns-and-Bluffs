@@ -1,0 +1,163 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+    background: #ff9800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+/* Main Content Section */
+.content-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-container h2, h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff9800;
+}
+
+.content-container p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Link Styles */
+.content-container a {
+    color: #333;
+}
+
+.content-container a:hover {
+    color: #ff9800;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+/* Responsive Footer for Mobile */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.85rem;
+        padding: 20px 10px;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    footer a {
+        display: block;  /* Ensures each link appears on a new line */
+        margin: 8px auto;  /* Centers the links */
+        font-size: 0.9rem;
+        text-align: center;
+        width: fit-content;  /* Keeps the link width compact */
+    }
+}
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.4rem;
+        text-align: left; /* Align H2 and H3 to the left on mobile */
+        padding-left: 10px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding: 0 10px;
+        text-align: left;
+    }
+}
+
+/* Extra Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    h2, h3 {
+        font-size: 1.3rem;
+        text-align: left; /* Ensure left alignment on smaller screens */
+        padding-left: 10px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
